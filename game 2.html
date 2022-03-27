@@ -128,10 +128,10 @@
                     var wall = walls[index];
                     context.beginPath();
                     context.rect(wall.x, wall.y, wall.width, wall.height);
-                    context.fillStyle = "bule";
+                    context.fillStyle = "blue";
                     context.fill();
                     context.closePath();
-                    if (wall.pos == 'lefy') {
+                    if (wall.pos == 'left') {
                         wall.x += wallSpeed;
                         if ((wall.x + wall.width) >= me.x) {
                             loose();
